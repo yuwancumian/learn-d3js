@@ -1,0 +1,15 @@
+console.log('hahaha!')
+var svg = d3.select("#root").append("svg")
+    .attr("width", 960)
+    .attr("height", 500)
+
+
+var rect = svg.append("rect")
+    .attr("width", 200)
+    .attr("height", 120)
+    .attr("fill", "yellow")
+var t1 = svg.append("text")
+    .text("123")
+    .attr("x", 10)
+    .attr("y", 20)
+    .attr("fill", "#333333")
