@@ -12,10 +12,70 @@
     <h2>A d3.js demo</h2>
     <h5>svg animation</h5>
     <div id="root">
+        <div style="padding:20px; float: left;">
+            <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="75px" height="50px"
+                viewBox="0 0 150 100" enable-background="new 0 0 150 100" xml:space="preserve">
 
+                <style>
+                    .top,
+                    .bottom {
+                        -webkit-transform-origin: center;
+                        -moz-transform-origin: center;
+                        -o-transform-origin: center;
+                        -ms-transform-origin: center;
+                        transform-origin: center;
+                    }
+
+                    .middle,
+                    .top,
+                    .bottom {
+                        -webkit-transition: all 300ms ease;
+                        -moz-transition: all 300ms ease;
+                        -ms-transition: all 300ms ease;
+                        -o-transition: all 300ms ease;
+                        transition: all 300ms ease;
+                    }
+
+                    svg#Layer_3:hover .middle {
+                        -webkit-transform: translate(100px, 0px);
+                        -moz-transform: translate(100px, 0px);
+                        -o-transform: translate(100px, 0px);
+                        -ms-transform: translate(100px, 0px);
+                        transform: translate(100px, 0px);
+                        stroke: white;
+                    }
+
+                    svg#Layer_3:hover .top {
+
+                        -webkit-transform: rotate(45deg) translate(25px, 30px);
+                        -moz-transform: rotate(45deg) translate(25px, 30px);
+                        -o-transform: rotate(45deg) translate(25px, 30px);
+                        -ms-transform: rotate(45deg) translate(25px, 30px);
+                        transform: rotate(45deg) translate(25px, 30px);
+                    }
+
+                    svg#Layer_3:hover .bottom {
+
+                        -webkit-transform: rotate(-45deg) translate(25px, -30px);
+                        -moz-transform: rotate(-45deg) translate(25px, -30px);
+                        -o-transform: rotate(-45deg) translate(25px, -30px);
+                        -ms-transform: rotate(-45deg) translate(25px, -30px);
+                        transform: rotate(-45deg) translate(25px, -30px);
+                    }
+                </style>
+
+                <line class="middle" fill="none" stroke="#0037FF" stroke-width="20" stroke-miterlimit="10" x1="98"
+                    y1="51" x2="2" y2="51" />
+                <line class="top" fill="none" stroke="#0037FF" stroke-width="20" stroke-miterlimit="10" x1="98" y1="12"
+                    x2="2" y2="12" />
+                <line class="bottom" fill="none" stroke="#0037FF" stroke-width="20" stroke-miterlimit="10" x1="98"
+                    y1="89" x2="2" y2="89" />
+            </svg>
+        </div>
     </div>
 </body>
 <script src="../lib/d3.v4.min.js"></script>
-<script src="./05.js"></script>
+<script src="./06.js"></script>
 
 </html>

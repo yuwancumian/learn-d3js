@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        hr {
+            border: 1px solid #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>A d3.js demo</h2>
+    <hr>
+    <div>
+        <h3>animateMotion</h3>
+        <svg>
+            <g>
+                <rect x="0" y="0" width="30" height="30" style="fill: #ccc;" />
+                <circle cx="30" cy="30" r="15" style="fill: #cfc; stroke: green;" />
+                <animateMotion from="0,0" to="60,30" dur="4s" fill="freeze" />
+            </g>
+        </svg>
+    </div>
+    <div>
+        <h3>animateMotion</h3>
+        <svg>
+            <rect x="0" y="0" width="30" height="30" style="fill: #ccc;">
+                <animateMotion path="M50,125 C 100,25 150,225, 200, 125" dur="6s" fill="freeze" />
+            </rect>
+        </svg>
+    </div>
+    <div>
+        <h3>marker</h3>
+        <svg>
+            <defs>
+                <marker id="Triangle" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="6" markerHeight="6"
+                    orient="auto">
+                    <path d="M 0 0 L 10 5 L 0 10 z" />
+                </marker>
+            </defs>
+
+            <polyline points="10,90 50,80 90,20" fill="none" stroke="black" stroke-width="2"
+                marker-end="url(#Triangle)" />
+        </svg>
+    </div>
+    <div>
+        <h3>defs</h3>
+        <div>
+            <svg>
+                <defs>
+                    <g id="Port">
+                        <circle style="fill: inherit;" r="10" />
+                    </g>
+                </defs>
+
+                <use x="50" y="50" xlink:href="#Port" style="fill: blue;" />
+            </svg>
+        </div>
+    </div>
+    <div>
+        <h3>use</h3>
+        <svg>
+            <symbol id="sym01" viewBox="0 0 150 110">
+                <circle cx="50" cy="50" r="40" stroke-width="8" stroke="red" fill="red" />
+                <circle cx="90" cy="60" r="40" stroke-width="8" stroke="green" fill="white" />
+            </symbol>
+
+            <use href="#sym01" x="0" y="0" width="100" height="50" />
+        </svg>
+    </div>
+    <div>
+        <h3>symbol</h3>
+        <svg>
+            <symbol id="sym01" viewBox="0 0 150 110">
+                <circle cx="50" cy="50" r="40" stroke-width="8" stroke="red" fill="red" />
+                <circle cx="90" cy="60" r="40" stroke-width="8" stroke="green" fill="white" />
+            </symbol>
+
+            <use href="#sym01" x="0" y="0" width="100" height="50" />
+        </svg>
+    </div>
+</body>
+
+</html>

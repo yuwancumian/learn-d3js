@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        hr {
+            border: 1px solid #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>A d3.js demo</h2>
+    <h5>svg animation</h5>
+    <hr>
+    <div id="root">
+        <h3>embed svg</h3>
+        <embed src="icon1.svg" alt="">
+
+    </div>
+    <div>
+        <h3>animate</h3>
+        <svg width="200" height="200">
+            <circle cx="100" cy="100" r="50" style="fill:#ff6600">
+                <animate attributeName="r" attributeType="XML" from="50" to="80" begin="0s" dur="2s"
+                    repeatCount="indefinite" />
+            </circle>
+        </svg>
+    </div>
+    <div style="height: 200px;width: 200px">
+        <h3>animate</h3>
+        <svg>
+            <path fill="#1EB287">
+                <animate attributeName="d" dur="1440ms" repeatCount="indefinite" keyTimes="0;
+                    .0625;
+                    .208333333;
+                    .3125;
+                    .395833333;
+                    .645833333;
+                    .833333333;
+                    1" calcMode="spline" keySplines="0,0,1,1;
+                        .42,0,.58,1;
+                        .42,0,1,1;
+                        0,0,.58,1;
+                        .42,0,.58,1;
+                        .42,0,.58,1;
+                        .42,0,.58,1" values="M 0,0 
+                    C 50,0 50,0 100,0
+                    100,50 100,50 100,100
+                    50,100 50,100 0,100
+                    0,50 0,50 0,0
+                    Z;
+
+                    M 0,0 
+                    C 50,0 50,0 100,0
+                    100,50 100,50 100,100
+                    50,100 50,100 0,100
+                    0,50 0,50 0,0
+                    Z;
+
+                    M 50,0 
+                    C 75,25 75,25 100,50 
+                    75,75 75,75 50,100
+                    25,75 25,75 0,50
+                    25,25 25,25 50,0
+                    Z;
+
+                    M 25,50 
+                    C 37.5,25 37.5,25 50,0 
+                    75,50 75,50 100,100
+                    50,100 50,100 0,100
+                    12.5,75 12.5,75 25,50
+                    Z;
+
+                    M 25,50 
+                    C 37.5,25 37.5,25 50,0 
+                    75,50 75,50 100,100
+                    50,100 50,100 0,100
+                    12.5,75 12.5,75 25,50
+                    Z;
+
+                    M 50,0
+                    C 77.6,0 100,22.4 100,50 
+                    100,77.6 77.6,100 50,100
+                    22.4,100, 0,77.6, 0,50
+                    0,22.4, 22.4,0, 50,0
+                    Z;
+                    
+                    M 50,0
+                    C 77.6,0 100,22.4 100,50 
+                    100,77.6 77.6,100 50,100
+                    22.4,100, 0,77.6, 0,50
+                    0,22.4, 22.4,0, 50,0
+                    Z;
+                    
+                    M 100,0 
+                    C 100,50 100,50 100,100
+                    50,100 50,100 0,100
+                    0,50 0,50 0,0
+                    50,0 50,0 100,0
+                    Z;" />
+            </path>
+        </svg>
+
+    </div>
+    <div>
+        <h3>animateTransform</h3>
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;"
+            xml:space="preserve">
+            <rect x="0" y="0" width="4" height="10" fill="#333" transform="translate(0 15.1665)">
+                <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0"
+                    begin="0" dur="0.6s" repeatCount="indefinite"></animateTransform>
+            </rect>
+            <rect x="10" y="0" width="4" height="10" fill="#333" transform="translate(0 11.5002)">
+                <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0"
+                    begin="0.2s" dur="0.6s" repeatCount="indefinite"></animateTransform>
+            </rect>
+            <rect x="20" y="0" width="4" height="10" fill="#333" transform="translate(0 1.83315)">
+                <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0"
+                    begin="0.4s" dur="0.6s" repeatCount="indefinite"></animateTransform>
+            </rect>
+        </svg>
+    </div>
+
+</body>
+
+</html>
