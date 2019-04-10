@@ -1,0 +1,16 @@
+{
+  "name": "step06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "06.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mathigon/boost": "^0.2.8",
+    "@mathigon/core": "^0.2.5"
+  }
+}
